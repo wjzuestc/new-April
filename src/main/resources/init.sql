@@ -1,0 +1,1 @@
+INSERT INTO customer (NAME,PHONE) VALUES ('jingzeng','4564564')
