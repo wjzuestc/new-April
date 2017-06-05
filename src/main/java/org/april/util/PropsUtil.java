@@ -71,7 +71,7 @@ public final class PropsUtil {
      * @return 返回key对应于文件中的value
      * @since 1.0.0
      */
-    private static String getString(Properties props, String key, String defaultValue) {
+    public static String getString(Properties props, String key, String defaultValue) {
         String value = defaultValue;
         if (props.containsKey(key)) {
             value = props.getProperty(key);
@@ -100,7 +100,7 @@ public final class PropsUtil {
      * @return 返回key对应于文件中的整形value
      * @since 1.0.0
      */
-    private static int getInt(Properties props, String key, int defaultValue) {
+    public static int getInt(Properties props, String key, int defaultValue) {
         int value = defaultValue;
         if (props.containsKey(key)) {
             value = CastUtil.castInt(props.getProperty(key));
@@ -129,7 +129,7 @@ public final class PropsUtil {
      * @return 返回key对应于文件中的布尔型value
      * @since 1.0.0
      */
-    private static boolean getBoolean(Properties props, String key, Boolean defaultValue) {
+    public static boolean getBoolean(Properties props, String key, Boolean defaultValue) {
         boolean value = defaultValue;
         if (props.containsKey(key)) {
             value = CastUtil.castBoolean(props.getProperty(key));

@@ -4,4 +4,4 @@ target/
 # IDEA #
 .idea/
 *.iml
-.log
+*.log
